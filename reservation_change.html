@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예약 완료</title>
+    <style>
+        html, body {
+            height: 100%;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-optical-sizing: auto;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #AA8967;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .completed-container {
+            position: relative;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .completed-message {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .complete-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #343a40;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .complete-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- 메인 시작 -->
+    <main class="completed-container">
+        <div class="completed-message">
+            예약이 변경 되었습니다.
+        </div>
+        <button class="complete-button" onclick="window.location.href='index.html'">완료</button>
+    </main>
+    <!-- 메인 끝 -->
+</body>
+</html>

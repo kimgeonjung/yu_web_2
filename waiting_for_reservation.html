@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예약 확인</title>
+    <style>
+        /* 전체 페이지 스타일 설정 */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #AA8967; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* 화면 중앙 정렬 */
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* 예약 확인 컨테이너 스타일 */
+        .reservation-container {
+            background-color: #fff; 
+            padding: 0; 
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+            width: 100%;
+            max-width: 500px; 
+        }
+
+        /* 예약 확인 헤더 스타일 */
+        .reservation-header {
+            background-color: #343a40; 
+            color: #fff;
+            padding: 10px; /* 크기를 줄임 */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            box-sizing: border-box; /* 패딩을 포함한 너비 계산 */
+        }
+
+        /* 예약 확인 내용 스타일 */
+        .reservation-content {
+            padding: 20px; 
+        }
+
+        /* 버튼 스타일 */
+        .btn {
+            display: inline-block;
+            background-color: #343a40; /* 버튼 색상을 검정으로 변경 */
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            border: none; 
+        }
+
+        /* 뒤로 가기 버튼 스타일 */
+        .btn-back {
+            background-color: #343a40; /* 버튼 색상을 검정으로 변경 */
+        }
+
+        /* 버튼 호버 스타일 */
+        .btn:hover {
+            background-color: #333; /* 호버 시 색상 조금 밝게 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 예약 확인 컨테이너 -->
+    <div class="reservation-container">
+        <!-- 예약 확인 헤더 -->
+        <div class="reservation-header">
+            <h2>예약 확인</h2>
+        </div>
+        <!-- 예약 확인 내용 -->
+        <div class="reservation-content">
+            <p><b>날짜:</b> <span id="date"></span></p>
+            <p><b>시간:</b> <span id="time"></span></p>
+            <p><b>인원수:</b> <span id="people"></span></p>
+            <!-- 취소 버튼 -->
+            <a href="restaurant_detail.html" class="btn btn-back">취소</a>
+            <!-- 예약 완료 버튼 -->
+            <a href="reservation_completed.html" class="btn">예약 완료</a>
+        </div>
+    </div>
+
+    <!-- 예약 정보 스크립트 -->
+    <script>
+        document.getElementById('date').innerText = "2024-06-10";
+        document.getElementById('time').innerText = "18:00";
+        document.getElementById('people').innerText = "4명";
+    </script>
+</body>
+</html>
